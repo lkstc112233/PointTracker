@@ -68,5 +68,8 @@ public class Game {
         blindSet = false;
         players.clear();
         players.addAll(allPlayers);
+        for (Player player: players) {
+            player.roundBet = 0;
+        }
     }
 }
