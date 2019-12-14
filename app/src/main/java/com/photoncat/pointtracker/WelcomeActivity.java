@@ -27,6 +27,10 @@ public class WelcomeActivity extends AppCompatActivity {
                 if (players > 0) {
                     intent.putExtra(GameActivity.CONTRACT_PLAYER_COUNT, players);
                 }
+            } catch(NumberFormatException e) {
+                Log.d(TAG, "NumberFormatException", e);
+            }
+            try {
                 int initial = Integer.valueOf(initialPoint.getText().toString());
                 if (initial > 0) {
                     intent.putExtra(GameActivity.CONTRACT_INITIAL_POINTS, initial);
