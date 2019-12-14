@@ -7,6 +7,10 @@ public class Game {
     public List<Player> players;
     public List<Player> allPlayers;
 
+    public int pot = 0;
+    public int bet = 0;
+    public boolean blindSet = false;
+
     public Game(int players, int initial) {
         this.players = new ArrayList<>();
         this.allPlayers = new ArrayList<>();
@@ -17,6 +21,15 @@ public class Game {
     }
 
     public void checkOrCall(int id) {
+        Player player = players.get(id);
+        if (blindSet) {
+            player.currentPoint -= (bet - player.roundBet);
+            pot += bet - player.roundBet;
+            player.roundBet = bet;
+        } else {
+            blindSet = true;
+
+        }
     }
 
     public Player fold(int id) {
@@ -25,5 +38,11 @@ public class Game {
 
     public void raise(int id, int amount) {
 
+    }
+
+    public void roundEnd() {
+        blindSet = false;
+        players.clear();
+        players.addAll(allPlayers);
     }
 }

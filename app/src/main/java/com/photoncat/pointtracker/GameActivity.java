@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -33,9 +34,21 @@ public class GameActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_game);
 
+        pot = findViewById(R.id.pot_size);
+        bet = findViewById(R.id.bet_size);
+
         adapter = new PlayerListAdapter(this, R.layout.player_info, game.players);
         ListView PaysListView = findViewById(R.id.players_list);
         PaysListView.setAdapter(adapter);
+
+        updateView();
+    }
+
+    public void roundEndOnClickHandler(View v) {
+        game.roundEnd();
+        adapter.clear();
+        adapter.addAll(game.allPlayers);
+        updateView();
     }
 
     public void checkOrCallOnClickHandler(View v) {
@@ -46,7 +59,7 @@ public class GameActivity extends AppCompatActivity {
 
     public void foldOnClickHandler(View v) {
         int playerPosition = (Integer)v.getTag();
-        adapter.remove(game.fold(playerPosition));
+        game.fold(playerPosition);
         updateView();
     }
 
@@ -77,5 +90,7 @@ public class GameActivity extends AppCompatActivity {
 
     private void updateView() {
         adapter.notifyDataSetChanged();
+        pot.setText(Integer.toString(game.pot));
+        bet.setText(Integer.toString(game.bet));
     }
 }
