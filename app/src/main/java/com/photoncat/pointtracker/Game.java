@@ -19,8 +19,8 @@ public class Game {
     public Game(int players, int initial, RandomNamesGenerator generator) {
         this.players = new ArrayList<>();
         this.allPlayers = new ArrayList<>();
-        this.players.add(new Player(generator.generate(), initial));
         for (int i = 0; i < players; ++i) {
+            this.players.add(new Player(generator.generate(), initial));
             this.allPlayers.add(this.players.get(i));
         }
     }
