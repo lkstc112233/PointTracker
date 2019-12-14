@@ -16,7 +16,8 @@
     <string name="confirm">OK</string>
     <string name="cancel">Cancel</string>
     <string name="round_end">Collect Points</string>
-    <string-array name="prebuilt_names">Ant-Man
+    <string-array name="prebuilt_names">
+        <item>Ant-Man</item>
         <item>Aquaman</item>
         <item>Asterix</item>
         <item>The Atom</item>

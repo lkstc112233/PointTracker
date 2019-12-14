@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><string name="app_name">记分器</string>
+    <string name="welcome">欢迎！</string>
+    <string name="players_count">玩家数量</string>
+    <string name="initial_points">初始分数</string>
+    <string name="start_game">开始游戏！</string>
+    <string name="pot">注池</string>
+    <string name="blinds">盲注</string>
+    <string name="small_blind">小盲注</string>
+    <string name="big_blind">大盲注</string>
+    <string name="check">看牌</string>
+    <string name="fold">弃牌</string>
+    <string name="call">跟牌</string>
+    <string name="raise">加注..</string>
+    <string name="current_bet">当前注值</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="round_end">本轮结束</string>
+    <string-array name="prebuilt_names">
+        <item>韦小宝</item>
+        <item>顾炎武</item>
+        <item>令狐冲</item>
+        <item>岳不群</item>
+        <item>杨过</item>
+        <item>小龙女</item>
+        <item>李莫愁</item>
+        <item>裘千尺</item>
+        <item>张无忌</item>
+        <item>赵敏</item>
+        <item>周芷若</item>
+        <item>灭绝师太</item>
+        <item>张三丰</item>
+        <item>郭靖</item>
+        <item>黄蓉</item>
+        <item>洪七公</item>
+        <item>黄药师</item>
+        <item>周伯通</item>
+        <item>欧阳锋</item>
+        <item>梅超风</item>
+        <item>段誉</item>
+        <item>虚竹</item>
+        <item>段正淳</item>
+        <item>鸠摩智</item>
+        <item>陈家洛</item>
+        <item>张昭重</item>
+        <item>袁承志</item>
+        <item>何铁手</item>
+        <item>胡斐</item>
+        <item>石破天</item>
+        <item>楚留香</item>
+        <item>中原一点红</item>
+        <item>东方不败</item>
+        <item>陆小凤</item>
+        <item>李寻欢</item>
+        <item>林平之</item>
+        <item>上官云</item>
+        <item>郭襄</item>
+        <item>洪七公</item>
+        <item>穆念慈</item>
+        <item>独孤求败</item>
+        <item>包拯</item>
+        <item>展昭</item>
+        <item>天山童姥</item>
+        <item>包租婆</item>
+        <item>火云邪神</item>
+    </string-array>
+</resources>
