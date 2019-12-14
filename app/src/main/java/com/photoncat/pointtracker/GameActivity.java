@@ -46,8 +46,6 @@ public class GameActivity extends AppCompatActivity {
 
     public void roundEndOnClickHandler(View v) {
         game.roundEnd();
-        adapter.clear();
-        adapter.addAll(game.allPlayers);
         updateView();
     }
 

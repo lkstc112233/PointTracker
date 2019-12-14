@@ -28,7 +28,13 @@ public class Game {
             player.roundBet = bet;
         } else {
             blindSet = true;
-
+            bet = 2;
+            player.roundBet = 1;
+            player.currentPoint -= 1;
+            Player bigBlind = players.get((id+1)%players.size());
+            bigBlind.roundBet = 2;
+            bigBlind.currentPoint -= 2;
+            pot += 3;
         }
     }
 
@@ -37,10 +43,23 @@ public class Game {
     }
 
     public void raise(int id, int amount) {
-
+        Player player = players.get(id);
+        bet += amount;
+        player.currentPoint -= (bet - player.roundBet);
+        pot += bet - player.roundBet;
+        player.roundBet = bet;
     }
 
     public void roundEnd() {
+        int survivalPlayers = players.size();
+        if (survivalPlayers > 0) {
+            int pointsPerPlayer = pot / survivalPlayers;
+            pot = pot % survivalPlayers;
+            for (Player player : players) {
+                player.currentPoint += pointsPerPlayer;
+            }
+        }
+        bet = 0;
         blindSet = false;
         players.clear();
         players.addAll(allPlayers);
