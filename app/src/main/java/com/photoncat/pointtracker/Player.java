@@ -4,7 +4,8 @@ public class Player {
     public String name;
     public int currentPoint = 0;
 
-    public Player(int initial) {
+    public Player(String name, int initial) {
+        this.name = name;
         this.currentPoint = initial;
     }
 }

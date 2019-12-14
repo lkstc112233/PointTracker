@@ -11,7 +11,7 @@ public class Game {
         this.players = new ArrayList<>();
         this.allPlayers = new ArrayList<>();
         for (int i = 0; i < players; ++i) {
-            this.players.add(new Player(initial));
+            this.players.add(new Player("Player " + i, initial));
             this.allPlayers.add(this.players.get(i));
         }
     }
