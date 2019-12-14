@@ -15,4 +15,5 @@
     <string name="current_bet">Current Bet</string>
     <string name="confirm">OK</string>
     <string name="cancel">Cancel</string>
+    <string name="round_end">Collect Points</string>
 </resources>

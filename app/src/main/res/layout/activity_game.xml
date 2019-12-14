@@ -52,9 +52,16 @@
             app:layout_constraintEnd_toEndOf="parent" />
     </android.support.constraint.ConstraintLayout>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/round_end"
+        android:text="@string/round_end"
+        app:layout_constraintTop_toBottomOf="@+id/bet_container"/>
+
     <ListView
         android:id="@+id/players_list"
-        app:layout_constraintTop_toBottomOf="@+id/bet_container"
+        app:layout_constraintTop_toBottomOf="@+id/round_end"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
