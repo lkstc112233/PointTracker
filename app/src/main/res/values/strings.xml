@@ -4,4 +4,11 @@
     <string name="players_count">Players</string>
     <string name="initial_points">Initial Points</string>
     <string name="start_game">Start Game</string>
+    <string name="blinds">Blinds</string>
+    <string name="small_blind">Small Blind</string>
+    <string name="big_blind">Big Blind</string>
+    <string name="check">Check</string>
+    <string name="fold">Fold</string>
+    <string name="call">Call</string>
+    <string name="raise">Raise..</string>
 </resources>
