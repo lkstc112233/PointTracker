@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class WelcomeActivity extends AppCompatActivity {
-    private static final String TAG = WelcomeActivity.class.getName();
+    private static final String TAG = WelcomeActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

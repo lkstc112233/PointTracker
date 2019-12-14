@@ -13,4 +13,6 @@
     <string name="call">Call</string>
     <string name="raise">Raise..</string>
     <string name="current_bet">Current Bet</string>
+    <string name="confirm">OK</string>
+    <string name="cancel">Cancel</string>
 </resources>
