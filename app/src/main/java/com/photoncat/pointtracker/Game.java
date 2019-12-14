@@ -1,6 +1,7 @@
 package com.photoncat.pointtracker;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Game {
@@ -12,10 +13,14 @@ public class Game {
     public boolean blindSet = false;
 
     public Game(int players, int initial) {
+        this(players, initial, new RandomNamesGenerator(Collections.EMPTY_LIST));
+    }
+
+    public Game(int players, int initial, RandomNamesGenerator generator) {
         this.players = new ArrayList<>();
         this.allPlayers = new ArrayList<>();
+        this.players.add(new Player(generator.generate(), initial));
         for (int i = 0; i < players; ++i) {
-            this.players.add(new Player("Player " + i, initial));
             this.allPlayers.add(this.players.get(i));
         }
     }

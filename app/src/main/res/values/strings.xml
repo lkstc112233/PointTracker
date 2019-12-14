@@ -16,4 +16,51 @@
     <string name="confirm">OK</string>
     <string name="cancel">Cancel</string>
     <string name="round_end">Collect Points</string>
+    <string-array name="prebuilt_names">Ant-Man
+        <item>Aquaman</item>
+        <item>Asterix</item>
+        <item>The Atom</item>
+        <item>The Avengers</item>
+        <item>Batgirl</item>
+        <item>Batman</item>
+        <item>Batwoman</item>
+        <item>Black Canary</item>
+        <item>Black Panther</item>
+        <item>Captain America</item>
+        <item>Captain Marvel</item>
+        <item>Catwoman</item>
+        <item>Conan the Barbarian</item>
+        <item>Daredevil</item>
+        <item>The Defenders</item>
+        <item>Doc Savage</item>
+        <item>Doctor Strange</item>
+        <item>Elektra</item>
+        <item>Fantastic Four</item>
+        <item>Ghost Rider</item>
+        <item>Green Arrow</item>
+        <item>Green Lantern</item>
+        <item>Guardians of the Galaxy</item>
+        <item>Hawkeye</item>
+        <item>Hellboy</item>
+        <item>Incredible Hulk</item>
+        <item>Iron Fist</item>
+        <item>Iron Man</item>
+        <item>Marvelman</item>
+        <item>Robin</item>
+        <item>The Rocketeer</item>
+        <item>The Shadow</item>
+        <item>Spider-Man</item>
+        <item>Sub-Mariner</item>
+        <item>Supergirl</item>
+        <item>Superman</item>
+        <item>Teenage Mutant Ninja Turtles</item>
+        <item>Thor</item>
+        <item>The Wasp</item>
+        <item>Watchmen</item>
+        <item>Wolverine</item>
+        <item>Wonder Woman</item>
+        <item>X-Men</item>
+        <item>Zatanna</item>
+        <item>Zatara</item>
+    </string-array>
 </resources>

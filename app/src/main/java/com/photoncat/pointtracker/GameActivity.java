@@ -12,6 +12,9 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 public class GameActivity extends AppCompatActivity {
     private final static String TAG = GameActivity.class.getSimpleName();
     public final static String CONTRACT_PLAYER_COUNT = "player_count";
@@ -30,7 +33,7 @@ public class GameActivity extends AppCompatActivity {
         int player = intent.getIntExtra(CONTRACT_PLAYER_COUNT, 5);
         int initial = intent.getIntExtra(CONTRACT_INITIAL_POINTS, 1000);
 
-        game = new Game(player, initial);
+        game = new Game(player, initial, new RandomNamesGenerator(Arrays.asList(getResources().getStringArray(R.array.prebuilt_names))));
 
         setContentView(R.layout.activity_game);
 
